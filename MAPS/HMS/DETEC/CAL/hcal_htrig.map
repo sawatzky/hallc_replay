@@ -14,8 +14,8 @@ REFINDEX=3
   11,   1,   4,   0  ! hDSUM
   12,   1,   5,   0  ! hPSHWR
   13,   1,   6,   0  ! hSHWR
-  14,   1,   7,   0  ! hAERSUM
-  15,   1,   8,   0  ! hCERSUM
+  14,   1,   7,   0  ! hAER
+  15,   1,   8,   0  ! hCER
 
 SLOT=18
 REFINDEX=3
@@ -36,11 +36,11 @@ REFINDEX=0
    8,   2,   9,   1  ! hBSUM
    9,   2,  10,   1  ! hCSUM
   10,   2,  11,   1  ! hDSUM
-  11,   2,  12,   1  ! hPSHWRLO
-  12,   2,  13,   1  ! hPSHWRHI
+  11,   2,  12,   1  ! hPRLO
+  12,   2,  13,   1  ! hPRHI
   13,   2,  14,   1  ! hSHWR
-  14,   2,  15,   1  ! hHODO_EDTM
-  15,   2,  16,   1  ! hCERSUM
+  14,   2,  15,   1  ! hEDTM
+  15,   2,  16,   1  ! hCER
   26,   2,  22,   1  ! hTRIG1
   27,   2,  23,   1  ! hTRIG2
   28,   2,  24,   1  ! hTRIG3
@@ -53,6 +53,26 @@ REFINDEX=0
   19,   2,  31,   1  ! pTRIG4
   20,   2,  32,   1  ! pTRIG5
   21,   2,  33,   1  ! pTRIG6
+  48,   2,  34,   1  ! pSTOF
+  49,   2,  35,   1  ! pEL_LO_LO
+  50,   2,  36,   1  ! pEL_LO
+  51,   2,  37,   1  ! pEL_HI
+  52,   2,  38,   1  ! pEL_REAL
+  53,   2,  39,   1  ! pEL_CLEAN
+  56,   2,  40,   1  ! hSTOF
+  57,   2,  41,   1  ! hEL_LO_LO
+  58,   2,  42,   1  ! hEL_LO
+  59,   2,  43,   1  ! hEL_HI
+  60,   2,  44,   1  ! hEL_REAL
+  61,   2,  45,   1  ! hEL_CLEAN
+  64,   2,  46,   1  ! pPRE40
+  65,   2,  47,   1  ! pPRE100
+  66,   2,  48,   1  ! pPRE150
+  67,   2,  49,   1  ! pPRE200
+  72,   2,  50,   1  ! hPRE40
+  73,   2,  51,   1  ! hPRE100
+  74,   2,  52,   1  ! hPRE150
+  75,   2,  53,   1  ! hPRE200
 
 SLOT=20
 REFINDEX=1

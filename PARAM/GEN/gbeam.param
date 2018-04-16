@@ -1,43 +1,40 @@
 ;                    BPM calibration constants
 ;                    =========================
 
-;From Dave Gaskell's survey
-;gbpm_x_off = -0.284, -0.288, -0.326
-;gbpm_y_off = -0.021, -0.020, -0.0045
 
-; average beam positions: only used if 'guse_bpm_in_recon=0' 
-  gbeam_xoff  = +0.00
-  gbeam_xpoff = +0.00
-  gbeam_yoff  = +0.00
-  gbeam_ypoff = +0.00
+; average beam positions:
+; Use the Hall C EPICS BPM values in units of cm
+  gbeam_x  = +0.00
+  gbeam_xp = +0.00
+  gbeam_y  = +0.00
+  gbeam_yp = +0.00
 
-;positions of BPMs relative to target (from Mark 2017)
+;positions of BPMs relative to target (from survey 2017)
 gbpm_zpos = 370.82, 224.96, 129.3 ; cm
 
 
 ;             Fast Raster calibration constants
 ;             =================================
-
+  gusefr               = 1  
 ; flag if 1 fast raster data used with average beam pos and angles in
 calculating beam position
 ; if 0 then only use average beam pos and angles in calculating beam position
 ; Various fast raster quantities: gUse* are flags
 
-  gusefr               = 1  ; if 1 correct for FRY in reconstruction
 
-  gfr_cal_mom      = 6.4  ; = beam momnetum during calibration run 
+  gfr_cal_mom  = 6.4  ; = beam momnetum during jan 2018 3 pass 
+       
+  gfrya_adcpercm = (77755.-57411.)/.2;
+  gfryb_adcpercm = (71093.-52056.)/.2;
+  gfrxa_adcpercm = (75733.-51938.)/.2;
+  gfrxb_adcpercm =  (79778.-57293.)/.2;
 
-      
-  gfrxa_adcpercm = 97666.7;
-  gfrxb_adcpercm = 97333.3;
-  gfrya_adcpercm = 113667;
-  gfryb_adcpercm = 114333;
+  gfrya_adc_zero_offset = (77755.+57411.)/2.;
+  gfryb_adc_zero_offset = (71093.+52056.)/2.;
+  gfrxa_adc_zero_offset = (75733.+51938.)/2.;
+  gfrxb_adc_zero_offset = (79778.+57293.)/2. ;
 
-  gfrxa_adc_zero_offset = 67800;
-  gfrxb_adc_zero_offset = 69050;
-  gfrya_adc_zero_offset = 67700;
-  gfryb_adc_zero_offset = 67000;
-
+ 
 ; positions of FR magnets relative to target
   gfrx_dist  = 1375   ; cm
   gfry_dist  = 1337   ; cm
